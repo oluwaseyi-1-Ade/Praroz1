@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#main {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    font-family: Arial;
+}
+
+.logo {
+    color: #ff7200;
+    padding: 10px 25px;
+    font-size: 40px;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu ul li {
+    padding: 0 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu ul li a:hover {
+    color: #ff7200;
+}
+
+nav .bar {
+    color: white;
+    display: none;
+    padding-left: 20px;
+}
+
+.search-wrapper {
+    display: flex;
+    padding: 0 2px;
+}
+
+.search-wrapper .srch {
+    width: 230px;
+    height: 40px;
+    color: white;
+    border: 1px solid #ff7200;
+    background: transparent;
+    border-right: none;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+::placeholder {
+    font-size: 15px;
+    color: white;
+    font-family: Arial;
+    padding: 0 3px;
+}
+
+.search-wrapper .srch-btn {
+    height: 42px;
+    width: 95px;
+    background-color: #ff7200;
+    color: white;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    cursor: pointer;
+    border: none;
+}
+
+.search-wrapper .srch:focus {
+    outline: none;
+}
+
+.search-wrapper button:focus {
+    outline: none;
+}
+
+nav .srch-icon {
+    color: white;
+    display: none;
+    padding-right: 20px;
+}
+
+#content {
+    color: white;
+    padding: 140px 35px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content .cont-text .head {
+    max-width: 270px;
+    font-size: 35px;
+    letter-spacing: 1.2px;
+}
+
+#content .cont-text .head span {
+    color: #ff7200;
+    font-size: 45px;
+}
+
+#content .cont-text .par {
+    padding: 10px 0 15px 0;
+    font-family: Arial, sans-serif;
+    line-height: 30px;
+    letter-spacing: .9px;
+}
+
+button.join {
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #ff7200;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+button.join:hover {
+    background-color: white;
+    color: #ff7200;
+}
+
+
+#content .form {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+    width: 280px;
+    height: 380px;
+    border-radius: 10px;
+    position: relative;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+#content .form h2 {
+    padding: 7px 0;
+    background-color: white;
+    color: #ff7200;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#content .form input {
+    background: transparent;
+    width: 280px;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    padding-top: 20px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid #ff7200;
+}
+
+#content .form input:focus{
+    outline: none;
+}
+
+div.input {
+    padding-bottom: 25px;
+}
+
+button.login {
+    background-color: #ff7200;
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+   
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+button.login:hover {
+    background-color: white;
+}
+
+p.form-par {
+    padding: 20px 50px;
+    text-align: center;
+    max-width: 180px;
+}
+
+p.form-par a {
+    text-decoration: none;
+    color: #ff7200;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+p.form-par a:hover {
+    color: blueviolet;
+}
+
+p.liw {
+    text-align: center;
+}
+
+.form .icons {
+    padding: 15px 15px 8px 15px;
+}
+
+.form .icons i {
+    color: white;
+    height: 20px;
+    padding: 15px;
+}
+
+.form .icons i:hover {
+    color:#ff7200;
+}
+
+.new-login p {
+    color: white;
+    text-align: center;
+    display: none;
+    font-size: 30px;
+    padding: 15px 10px;
+}
+
+.new-login p a {
+    text-decoration: none;
+    color: #ff7200;
+}
+
+.new-login p a:hover {
+    border-bottom: 1px solid #ff7200;
+}
+
+@media only screen and (max-width:1150px) {
+    div.menu {
+        display: none;
+    }
+
+    i.bar {
+        display: flex;
+    }
+
+    nav .search-wrapper {
+        display: none;
+    }
+
+    i.srch-icon {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:670px) {
+.form {
+    display: none;
+}
+
+.new-login p {
+    display: block;
+}
+}
+
+@media only screen and (max-width:350px) {
+    #content {
+        padding: 70px 30px 10px;
+    }
+
+    #content .cont-text .head {
+        font-size: 30px;
+    }
+
+    #content .cont-text .head span {
+        font-size: 35px;
+    }
+
+    #content .cont-text .par {
+        font-size: 14px;
+    }
+}
